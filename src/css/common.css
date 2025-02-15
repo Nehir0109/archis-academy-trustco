@@ -13,6 +13,8 @@ header{
     padding-block: 2.3em; 
     padding-inline: 2em; 
     margin: 0 auto;
+    width: 100%;
+    height:98px;
 }
 .nav-branding {
     max-width: 158px;
@@ -137,7 +139,7 @@ header{
       top: 90px;
       gap: 10px;
       flex-direction: column;
-      background-color: #92A7B0;
+      background-color: #d4d8da;
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -152,6 +154,10 @@ header{
     }
     .navbar {
         font-size: var(--font-base);
+        background-color: white;
+    }
+    .header{
+      background-color: white;
     }
   }
 /* TR-07 - HEADER SECTİON END */
