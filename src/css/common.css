@@ -129,7 +129,7 @@
 /* TR-03 - Hero Section End */ 
 
 /* TR-05 - Trusted Brands Section Start */
-.trusted-brand-section{
+.trusted-brands-section{
     background-color: white;
     padding: 50px 20px;
 }
@@ -139,6 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 .trusted-brands-title{
     font-family: var(--font-family-base);
@@ -153,5 +154,42 @@
 }
 .brand-logo{
     max-width: 135px;
+}
+
+@media screen and (max-width: 1200px) {
+    .brands-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .brands-logo-container{
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 992px){
+    .brands-logo-container{
+        gap:40px;
+    }
+    .brand-logo{
+        max-width: 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    .trusted-brands-title{
+        font-size:var(--font-xs) ;
+    }
+    .brands-logo-container{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .brand-logo{
+        max-width: 80px;
+    }
+}
+@media screen and (max-width: 576px){
+    .trusted-brands-title{
+        font-size: var(--font-xxs);
+    }
 }
 /* TR-05 Trusted Brands End */
