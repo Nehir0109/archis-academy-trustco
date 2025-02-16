@@ -39,7 +39,9 @@ header{
   cursor: pointer;
   padding-bottom: 5px;
   transition: color 0.3s ease;
-  font-size: 1em;
+}
+.nav-link.active {
+    color: var(--primary-color);
 }
 .nav-link.active::after {
     content: "";
@@ -110,16 +112,16 @@ header{
     transition: 0.3s ease-in-out;
     background-color: var(--primary-color);
 }
-@media screen and (max-width: 1110px){
-    .login-btn , .signup-btn{
-        font-size: var(--font-xs);
-        width: 5.5em;
-        display: none;
+/*@media screen and (max-width: 1110px) and (min-width: 821px) {  
+    .login-btn, .signup-btn {
+        font-size: clamp(var(--font-xxs), 1.5em, var(--font-xs));
+        width: 5.5em;  
+        height: 3em;
     }
-    .navbar {
-        font-size: var(--font-sm);
+    .nav-link{
+        font-size: clamp(var(--font-xxs), 1.5em, var(--font-xs));
     }
-}
+}*/
 @media screen and (max-width: 820px) {
     .hamburger-menu {
       display: block;
@@ -136,28 +138,42 @@ header{
     .navbar-menu {
       position: fixed;
       left: 100%;
-      top: 90px;
-      gap: 10px;
+      top: 98px;
+      gap: 20px;
       flex-direction: column;
-      background-color: #d4d8da;
+      background-color: #a7bdc6;
       width: 100%;
       text-align: center;
       transition: 0.3s;
+      padding-block-start: 20px;
       padding-block-end: 20px;
+      align-items: center;
     }
     .navbar-menu .nav-item {
       flex-direction: column;
-      color:white;
+    }
+    .navbar-menu .nav-item:hover{
+        color: var(--primary-color);
     }
     .navbar-menu.active {
       left: 0;
     }
-    .navbar {
-        font-size: var(--font-base);
-        background-color: white;
+    .navbar-buttons { 
+        display: none; 
     }
-    .header{
-      background-color: white;
+    .navbar-menu.active .nav-link { 
+        color: white;
+        font-weight: 500;
+        transition: background 0.3s, color 0.3s;
+        border-radius: 90px;
+        font-size: var(--font-base);
+    }
+    .navbar-menu.active .nav-link.active{
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    .navbar-menu.active .nav-link:hover{
+        box-shadow: 0px 23px 47px 0px #043A533D;
     }
   }
 /* TR-07 - HEADER SECTİON END */
