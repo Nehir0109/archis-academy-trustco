@@ -127,3 +127,31 @@
     }
 }
 /* TR-03 - Hero Section End */ 
+
+/* TR-05 - Trusted Brands Section Start */
+.trusted-brand-section{
+    background-color: white;
+    padding: 50px 20px;
+}
+.brands-container{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trusted-brands-title{
+    font-family: var(--font-family-base);
+    font-size: var(--font-sm);
+    font-weight: var(--medium);
+    line-height: 24px;
+    color: black;
+}
+.brands-logo-container{
+    display: flex;
+    gap: 64px;
+}
+.brand-logo{
+    max-width: 135px;
+}
+/* TR-05 Trusted Brands End */
