@@ -31,7 +31,6 @@ header {
 .navbar-menu ul {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   width: 55%;
   gap: 10px;
@@ -160,8 +159,7 @@ header {
     flex-direction: column;
   }
 
-  /* burayi li tagi ile degistir */
-  .navbar-menu ul a {
+  .nav-item {
     padding: 10px;
   }
 

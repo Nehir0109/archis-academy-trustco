@@ -6,7 +6,6 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   menu.classList.toggle("active");
 });
-// document.addEventListener("DOMContentLoaded", function () {
 
 const changeLinkVisual = () => {
   const navLinks = document.querySelectorAll(".nav-link");
@@ -18,7 +17,6 @@ const changeLinkVisual = () => {
     }
   });
 };
-// });
 
 changeLinkVisual();
 
