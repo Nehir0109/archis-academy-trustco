@@ -1,65 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trustco</title>
-        <link rel="stylesheet" href="/src/css/index.css">
-        <!--FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trustco</title>
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- TR-07 - Header Section Start -->
+      <nav class="navbar">
+        <a href="/" class="nav-branding"><img src="assets/trustco-logo.svg"/></a>
 
-    </head>
+        <div class="navbar-menu">
+          <ul>
+            <li class="nav-item"><a href="/features" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="/solutions" class="nav-link">Solutions</a></li>
+            <li class="nav-item"><a href="/company" class="nav-link">Company</a></li>
+            <li class="nav-item"><a href="/resources" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="navbar-buttons">
+            <button class="login-btn" id="login-btn">Login</button>
+            <button class="signup-btn" id="signup-btn">Sign up</button>
+          </div>
+        </div>
 
-    <body>
-        <header></header>
-        <main>
-            <!-- TR-03 - Hero Section Start -->
-             <section class="hero-section">
-                <div class="hero-image-container">
-                    <img src="assets/hero-img-left.png" alt="Hero Image" />
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <!-- TR-07 - Header Section End -->
+    </header>
+    <main>
+        <!-- TR-03 - Hero Section Start -->
+        <section class="hero-section">
+            <div class="hero-image-container">
+                <img src="assets/hero-img-left.png" alt="Hero Image" />
+            </div>
+
+            <div class="hero-section-content">
+                <h1 class="hero-title">
+                    Find High-Potential Customers with
+                    <span class="hero-title-highlight">Trustco.</span>
+                </h1>
+                <p class="hero-description">
+                    We provide sales teams and professionals with the knowledge, skill and 
+                    discipline they need to be 10x more successful.
+                </p>
+                <div class="hero-section-cta-container">
+                    <button class="btn-soft-shadow">Get Started</button>
+
+                    <button class="btn-secondary">
+                        <img src="assets/play-icon.svg" alt="Play Icon"/>
+                        Check Our Video 
+                    </button>
                 </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="assets/hero-img-right.png" alt="Hero Image"/>
+            </div>
+         </section>
+        <!-- TR-03 - Hero Section End -->
+         <!-- TR-05 - Trusted Brands Section Start-->
+         <section class="trusted-brands-section">
+            <div class="brands-container">
+                <h3 class="trusted-brands-title">Trusted by the best in the world </h3>
 
-                <div class="hero-section-content">
-                    <h1 class="hero-title">
-                        Find High-Potential Customers with
-                        <span class="hero-title-highlight">Trustco.</span>
-                    </h1>
-                    <p class="hero-description">
-                        We provide sales teams and professionals with the knowledge, skill and 
-                        discipline they need to be 10x more successful.
-                    </p>
-                    <div class="hero-section-cta-container">
-                        <button class="btn-soft-shadow">Get Started</button>
-
-                        <button class="btn-secondary">
-                            <img src="assets/play-icon.svg" alt="Play Icon"/>
-                            Check Our Video 
-                        </button>
-                    </div>
+                <div class="brands-logo-container">
+                    <img class="brand-logo" src="assets/trusted-brands/Google.svg" alt="Google"/> 
+                    <img class="brand-logo" src="assets/trusted-brands/Atlassian.svg" alt="Atlassian" />
+                    <img class="brand-logo" src="assets/trusted-brands/Canon.svg" alt="Canon" />
+                    <img class="brand-logo" src="assets/trusted-brands/Walmart.svg" alt="Walmart" />
+                    <img class="brand-logo" src="assets/trusted-brands/Amazon.svg" alt="Amazon" />
                 </div>
-                <div class="hero-image-container">
-                    <img src="assets/hero-img-right.png" alt="Hero Image"/>
-                </div>
-             </section>
-            <!-- TR-03 - Hero Section End -->
-            <!-- TR-05 - Trusted Brands Section Start-->
-            <section class="trusted-brands-section">
-                <div class="brands-container">
-                    <h3 class="trusted-brands-title">Trusted by the best in the world </h3>
-
-                    <div class="brands-logo-container">
-                        <img class="brand-logo" src="assets/trusted-brands/Google.svg" alt="Google"/> 
-                        <img class="brand-logo" src="assets/trusted-brands/Atlassian.svg" alt="Atlassian" />
-                        <img class="brand-logo" src="assets/trusted-brands/Canon.svg" alt="Canon" />
-                        <img class="brand-logo" src="assets/trusted-brands/Walmart.svg" alt="Walmart" />
-                        <img class="brand-logo" src="assets/trusted-brands/Amazon.svg" alt="Amazon" />
-                    </div>
-                </div>
-            </section>
-            <!-- TR-05 Trusted Brands End-->
-        </main>
-        <footer></footer>
-    </body>
+            </div>
+        </section>
+        <!-- TR-05 Trusted Brands End-->
+    </main>
+    <footer></footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
