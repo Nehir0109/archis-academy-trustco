@@ -193,3 +193,120 @@
     }
 }
 /* TR-05 Trusted Brands End */
+
+/* TR-13 - Building Bridges Seciton Start */
+.building-bridges-section{
+  font-family: var(--font-family-base);
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px, 0;
+  padding-left: 0;
+}
+.building-bridges-container{
+  display:flex;
+  width: 100%;
+  max-width: 1270px;
+  gap: 32px;
+  align-items: center;
+}
+.building-bridges-container .image-container, 
+.building-bridges-container .information-container{
+  width: 50%;
+}
+.building-bridges-container .image-container {
+  position: relative;
+  height: auto;
+}
+.building-bridges-container .image-container .image{
+  object-fit: cover;
+  width: 100%;
+  max-width: 629px;
+  height: auto;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius:16px;
+}
+.building-bridges-container .image-container .sticker-container{
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  padding: 26px, 56px;
+  gap: 16px;
+  cursor: default;
+  pointer-events: none;
+}
+.building-bridges-container .image-container .text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: var(--font-sm);
+  line-height: 24px;
+}
+.building-bridges-container .image-container .text-container .rank{
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+.building-bridges-section .information-container {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  max-width: 550px;
+  flex:1 ;
+  height: 100%;
+}
+.building-bridges-section .information-container .title {
+  font-size: var(--font-3xl);
+  line-height: 72px;
+  letter-spacing: -1.2px;
+}
+.building-bridges-section .information-container .title .accented {
+  color: #92A7B0;
+  font-size: var(--font-3xl);
+  line-height: 72px;
+  letter-spacing: -1.2px;
+}
+.building-bridges-section .information-container .description {
+  color: var(--text-color);
+  font-size : var(--font-md);
+  line-height: 30px;
+}
+.building-bridges-section .information-container .button{
+  width:205px;
+  height: 64px;
+  padding: 16px 20px;
+  border-radius: 55px;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: var(--font-base);
+  font-weight: var(--bold);
+  transform: scaleX(1);
+  transition: all 0.2s ease-in-out;
+}
+.building-bridges-section .information-container .button .arrow-container{
+  gap: 10px;
+  padding: 4px;
+  border-radius: 50%;
+}
+.building-bridges-section .information-container .button .arrow-container img{
+  width:32px;
+  height: 32px;
+}
+/* TR-13 - Building Bridges Seciton End */
