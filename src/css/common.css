@@ -387,6 +387,7 @@ header {
     }
 }
 /* TR-05 Trusted Brands End */
+
 /* TR-11 - Benefits Section Start */
 .benefits-section{
   font-family: var(--font-family-base);
@@ -543,3 +544,84 @@ header {
   }
 }
 /* TR-11 - Benefits Section End */
+
+/* TR-15 - Numbers Section Start */
+.numbers-section{
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 100px;
+}
+.numbers-container{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 65px;
+}
+.number-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+.counter {
+   font-family: var(--font-family-base); 
+   font-size: var(--font-3xl);
+   font-weight: 700;
+   line-height: 72px;
+   color: var(--primary-color);
+}
+.number-box p{
+    font-family: var(--font-family-base);
+    font-size: var(--font-lg);
+    font-weight: 700;
+    line-height: 32px;
+    color: #404040;
+}
+
+@media screen and (max-width: 992px){
+    .numbers-section{
+        padding: 50px 30px;
+    }
+    .numbers-container {
+        gap: 40px;
+    }
+    .counter{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .number-box p{
+        font-size: var(--font-md);
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .numbers-section{
+        padding: 50px 20px;
+    }
+    .numbers-container{
+        gap: 30px;
+        max-width: 60%;
+    }
+    .counter{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .number-box p{
+        font-size: var(--font-sm);
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 436px){
+    .numbers-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/* TR-15 - Numbers Section End */
