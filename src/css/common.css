@@ -193,3 +193,42 @@
     }
 }
 /* TR-05 Trusted Brands End */
+/* TR-15 - Numbers Section Start */
+.numbers-section{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 4rem 70px;
+}
+.numbers-container{
+    max-width: 1440px;
+    display: flex;
+    flex: 1 1 170px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.number-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+.counter {
+   font-family: var(--font-family-base); 
+   font-size: var(--font-3xl);
+   font-weight: 700;
+   line-height: 72px;
+   color: var(--primary-color);
+}
+.number-box p{
+    font-family: var(--font-family-base);
+    font-size: var(--font-lg);
+    font-weight: 700;
+    line-height: 32px;
+    color: #404040;
+}
+/* TR-15 - Numbers Section End */
