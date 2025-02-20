@@ -197,19 +197,20 @@
 .numbers-section{
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
-    padding: 4rem 70px;
+    padding: 100px;
 }
 .numbers-container{
     max-width: 1440px;
-    display: flex;
-    flex: 1 1 170px;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 65px;
 }
 .number-box {
     display: flex;
@@ -230,5 +231,45 @@
     font-weight: 700;
     line-height: 32px;
     color: #404040;
+}
+
+@media screen and (max-width: 992px){
+    .numbers-section{
+        padding: 50px 30px;
+    }
+    .numbers-container {
+        gap: 40px;
+    }
+    .counter{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .number-box p{
+        font-size: var(--font-md);
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .numbers-section{
+        padding: 50px 20px;
+    }
+    .numbers-container{
+        gap: 30px;
+        max-width: 60%;
+    }
+    .counter{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .number-box p{
+        font-size: var(--font-sm);
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 436px){
+    .numbers-container{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 /* TR-15 - Numbers Section End */
