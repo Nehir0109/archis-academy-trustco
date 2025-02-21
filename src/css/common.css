@@ -200,15 +200,17 @@
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px, 0;
-  padding-left: 0;
+  padding: 20px 0;
+  max-width: 1440px;
+  gap: 77px;
+  margin: 0 auto;
 }
 .building-bridges-container{
+  position: relative;
   display:flex;
-  width: 100%;
-  max-width: 1270px;
   gap: 32px;
   align-items: center;
 }
@@ -217,21 +219,21 @@
   width: 50%;
 }
 .building-bridges-container .image-container {
-  position: relative;
   height: auto;
+  width: 710px;
 }
 .building-bridges-container .image-container .image{
   object-fit: cover;
-  width: 100%;
   max-width: 629px;
+  width: 100%;
   height: auto;
   border-top-right-radius: 16px;
   border-bottom-right-radius:16px;
 }
-.building-bridges-container .image-container .sticker-container{
-  position: absolute;
-  top: 50%;
-  right: -50px;
+.building-bridges-container .sticker-container{
+    position: absolute;
+  bottom: 40px;
+  left: 65%;
   width: 230px;
   height: 230px;
   display: flex;
@@ -241,12 +243,11 @@
   border: 4px solid white;
   border-radius: 50%;
   background-color: var(--primary-color);
-  padding: 26px, 56px;
-  gap: 16px;
-  cursor: default;
-  pointer-events: none;
+  padding: 26px 56px;
+  gap: 10px;
+  box-shadow: 10px 13px 30px 0px #043A533D;
 }
-.building-bridges-container .image-container .text-container{
+.building-bridges-container .sticker-container .text-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +257,7 @@
   font-size: var(--font-sm);
   line-height: 24px;
 }
-.building-bridges-container .image-container .text-container .rank{
+.building-bridges-container .sticker-container .text-container .rank{
   font-size: 48px;
   line-height: 60px;
   letter-spacing: -0.96px;
@@ -298,7 +299,10 @@
   font-size: var(--font-base);
   font-weight: var(--bold);
   transform: scaleX(1);
-  transition: all 0.2s ease-in-out;
+  transition: background 0.3s, color 0.3s;
+}
+.building-bridges-section .information-container .button:hover {
+    box-shadow: 0px 23px 47px 0px #043A533D;
 }
 .building-bridges-section .information-container .button .arrow-container{
   gap: 10px;
