@@ -156,9 +156,11 @@ header {
     padding-block-start: 20px;
     padding-block-end: 20px;
     align-items: center;
+    display: none;
   }
   .navbar-menu ul {
     flex-direction: column;
+    width: 100%;
   }
 
   .nav-item {
@@ -170,6 +172,7 @@ header {
   }
   .navbar-menu.active {
     left: 0;
+    display: block;
   }
   .navbar-buttons {
     flex-direction: column;
@@ -394,6 +397,7 @@ header {
 
 /* TR-09 - Video Section Start */
 .video-section{
+    font-family: var(--font-family-base);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,14 +408,13 @@ header {
     gap: 65px;
 }
 .video-header{
-    max-width: 1140px;
+    max-width: 1440px;
     margin-inline: auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 .video-title{
-    font-family: var(--font-family-base);
     font-size: var(--font-3xl);
     font-weight: var(--bold);
     line-height: 72px;
@@ -482,6 +485,9 @@ header {
     }
 }
 @media screen and (max-width: 1024px){
+    .video-header{
+        gap:15px;
+    }
     .video-title{
         font-size: 40px;
         line-height: 48px;
@@ -533,7 +539,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 95%;
+        width: 95%; 
     }
     .video-description{
         max-width: 95%;
