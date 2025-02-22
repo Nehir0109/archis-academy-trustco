@@ -220,10 +220,10 @@
 }
 .building-bridges-container .image-container {
   height: auto;
-  width: 710px;
+  width: clamp(330px, 100%, 710px);
+  object-fit: cover;
 }
 .building-bridges-container .image-container .image{
-  object-fit: cover;
   max-width: 629px;
   width: 100%;
   height: auto;
@@ -312,5 +312,107 @@
 .building-bridges-section .information-container .button .arrow-container img{
   width:32px;
   height: 32px;
+}
+@media (max-width: 1220px){
+    .building-bridges-section .information-container {
+        gap: 28px;
+        padding: 0 10px;
+    }
+    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title .accented{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .building-bridges-section .information-container .description{
+        font-size: var(--font-base);
+        line-height: 26px;
+    }
+    .building-bridges-container .sticker-container{
+        transform: scale(0.9);
+    }
+
+}
+@media (max-width: 1095px){
+    .building-bridges-section{
+       flex-direction: column-reverse;
+       align-items: center;
+       gap:32px;
+       text-align: center;
+    }
+    .building-bridges-section .information-container .button{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 715px){
+    .building-bridges-container .sticker-container{
+        transform: scale(0.8);
+    }
+    .building-bridges-section .information-container { 
+        max-width: 100%;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title .accented{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .building-bridges-section .information-container .description{
+        font-size: var(--font-sm);
+        line-height: 24px;
+    } 
+}
+@media (max-width: 576px){
+    .building-bridges-section .information-container .button {
+        width:195px;
+        height: 54px;
+        font-size: var(--font-sm);
+        text-align: center;
+        padding: 8px 22px;
+    }
+    .building-bridges-container .image-container{
+        width: 100%;
+        padding: 20px;
+    }
+    .building-bridges-section .information-container {
+        gap: 16px;
+    }
+    .building-bridges-container .sticker-container{
+        transform: scale(0.7);
+        bottom: 45px;
+        left: 65%;
+    }
+    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title .accented{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .building-bridges-section .information-container .description{
+        font-size: var(--font-xs);
+        line-height: 20px;
+    } 
+}
+@media (max-width:525px ){
+    .building-bridges-container .sticker-container{
+        transform: scale(0.5);
+        bottom: 45px;
+        left: 65%;
+    }
+}
+@media (max-width:475px){
+    .building-bridges-container .sticker-container{
+        bottom: 8px;
+        left: 60%;
+    }
+}
+@media (max-width:426px ){
+    .building-bridges-container .sticker-container{
+        left: 55%;
+    }
+}
+@media(max-width: 360px){
+    .building-bridges-container .sticker-container{
+        left: 48%;
+    }
 }
 /* TR-13 - Building Bridges Seciton End */
