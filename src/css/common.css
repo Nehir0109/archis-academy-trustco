@@ -1008,3 +1008,118 @@ header {
     }
 }
 /* TR-15 - Numbers Section End */
+/* TR-19 -  Testimonials Section Start */
+.testimonials-section{
+  font-family: var(--font-family-base);
+  background-color: var(--light-grey);
+  width: 100%;
+  padding: 100px;
+}
+.testimonials-container{
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 65px;
+}
+.testimonials-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.testimonials-title{
+  color: var(--text-color);
+  font-size: var(--font-3xl);
+  font-weight: var(--bold);
+  line-height: 72px;
+}
+.testimonials-btn {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.testimonials-btn:hover{
+  scale: 1.05;
+}
+.testimonials-btn-text{
+  font-size: var(--font-base);
+  font-weight: var(--bold);
+  line-height: 28px;
+}
+.testimonials-cards-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 32px;
+}
+.testimonials-card{
+  min-height: 290px;
+  padding: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.8);
+}
+.quote{
+  width: 45px;
+}
+.testimonials-text{
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: var(--regular);
+  line-height: 32px;
+}
+.testimonials-info{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonials-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.testimonials-info .name-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.testimonials-info .name-container .testimonials-name {
+  color: #000000;
+  font-size: var(--font-sm);
+  font-weight: var(--bold);
+  line-height: 24px;
+}
+.testimonials-info .name-container .testimonials-role {
+  color: #404040;
+  font-size: var(--font-sm);
+  font-weight: var(--regular);
+  line-height: 24px;
+}
+.testimonials-slider-marker{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  gap: 10px;
+  margin: auto;
+}
+.slider-marker-item{
+  width: 20px;
+  height: 12px;
+  border-radius: 10px;
+  background-color:#D7E0E5 ;
+}
+.slider-marker-item-active{
+  width: 80px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+/* TR-19 - Testimonials Section End */
