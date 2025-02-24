@@ -1217,3 +1217,233 @@ header {
   }
 }
 /* TR-17 - Meet Our Founder Section End */
+/* TR-19 -  Testimonials Section Start */
+.testimonials-section{
+  font-family: var(--font-family-base);
+  background-color: var(--light-grey);
+  width: 100%;
+  padding: 100px;
+}
+.testimonials-container{
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 65px;
+}
+.testimonials-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.testimonials-title{
+  color: var(--text-color);
+  font-size: var(--font-3xl);
+  font-weight: var(--bold);
+  line-height: 72px;
+}
+.testimonials-btn {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.testimonials-btn:hover{
+  scale: 1.05;
+}
+.testimonials-btn-text{
+  font-size: var(--font-base);
+  font-weight: var(--bold);
+  line-height: 28px;
+}
+.testimonials-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.testimonials-cards-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 32px;
+}
+.testimonials-card{
+  min-height: 290px;
+  padding: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.8);
+}
+.quote{
+  width: 45px;
+}
+.testimonials-text{
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: var(--regular);
+  line-height: 32px;
+}
+.testimonials-info{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonials-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.name-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.testimonials-name {
+  color: #000000;
+  font-size: var(--font-sm);
+  font-weight: var(--bold);
+  line-height: 24px;
+}
+.testimonials-role {
+  color: #404040;
+  font-size: var(--font-sm);
+  font-weight: var(--regular);
+  line-height: 24px;
+}
+.testimonials-slider-marker{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  gap: 10px;
+  margin: auto;
+}
+.slider-marker-item{
+  width: 20px;
+  height: 12px;
+  border-radius: 10px;
+  background-color:#D7E0E5 ;
+}
+.slider-marker-item-active{
+  width: 80px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.testimonials-btn-mobile{
+  color: var(--primary-color);
+  display: none;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.testimonials-btn-mobile:hover{
+  scale: 1.05;
+}
+
+@media screen and (max-width: 1200px){
+  .testimonials-section {
+    padding: 100px 50px;
+  }
+  .testimonials-container,
+  .testimonials-content{
+    gap: 50px;
+  }
+  .testimonials-title{
+    font-size: 48px;
+  }
+  .testimonials-text{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .testimonials-avatar{
+    width: 42px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 992px){
+  .testimonials-container,
+  .testimonials-content{
+    gap: 40px;
+  }
+  .testimonials-title{
+    font-size: 40px;
+  }
+  .testimonials-text{
+    font-size: var(--font-base);
+    line-height: 24px;
+  }
+  .testimonials-avatar{
+    width: 36px;
+    height: 36px;
+  }
+  .name-container{
+    gap: 3px;
+  }
+}
+@media screen and (max-width: 768px){
+  .testimonials-section{
+    padding: 50px 20px;
+  }
+  .testimonials-container{
+    align-items: center;
+    gap: 32px;
+  }
+  .testimonials-content{
+    flex-direction: column-reverse;
+    gap:32px;
+  }
+  .testimonials-title{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .testimonials-btn{
+    display: none;
+  }
+  .testimonials-cards-container{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    scrollbar-width: none;
+  }
+  .testimonials-cards-container::-webkit-scrollbar{
+    display: none;
+  }
+  .testimonials-card{
+    min-width: 90%;
+    gap: 24px;
+    min-height: 200px;
+  }
+  .quote{
+    width: 32px;
+  }
+  .testimonials-text{
+    font-size: var(--font-sm);
+    line-height: 20px;
+  }
+  .testimonials-avatar{
+    width: 32px;
+    height: 32px;
+  }
+  .name-container{
+    gap: 0px;
+  }
+  .testimonials-name{
+    font-size: var(--font-xs);
+  }
+  .testimonials-role{
+    font-size: var(--font-xs);
+  }
+  .testimonials-btn-mobile{
+    display: flex;
+  }
+}
+/* TR-19 - Testimonials Section End */
