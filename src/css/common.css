@@ -1464,6 +1464,7 @@ header {
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .blogs-header{
   width: 100%;
@@ -1482,7 +1483,7 @@ header {
 .blogs-title .blogs-highlight{
   color: var(--primary-color);
 }
-.see-all-btn{
+.see-all-btn {
   font-size: var(--font-base);
   font-weight: var(--bold);
   line-height: 28px;
@@ -1520,12 +1521,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
 }
 .card-content-metadata {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-block: 10px;
 }
 .card-content-metadata .date {
   color: black;
@@ -1551,11 +1552,100 @@ header {
   font-weight: var(--regular);
   line-height: 28px;
   color: #404040;
+  opacity: 0.8;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .read-btn {
   font-size: var(--font-base);
   font-weight: var(--bold);
+}
+.see-all-btn-mobile {
+  display: none;
+  font-size: var(--font-base);
+  font-weight: var(--bold);
+  line-height: 28px;
+}
+@media screen and (max-width: 1200px){
+  .blogs-title{
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .see-all-btn, .read-btn{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blog-cards-container{
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card-title{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .card-content .card-description{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card-content-metadata .date,
+  .card-content-metadata .author {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media(max-width: 1024px){
+  .blogs-header{
+    justify-content: center;
+  }
+  .see-all-btn {
+    display: none;
+  }
+  .blogs-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .blog-cards-container {
+    display: flex;
+    overflow-x: scroll;
+    padding-block-end: 20px;
+    gap: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .blog-card {
+    min-width: 280px;
+  }
+  .see-all-btn-mobile{
+    display: block;
+    display: flex;
+    align-self: center;
+  }
+}
+@media (max-width: 768px){
+  .blogs-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .blog-cards-container{
+    gap: 10px;
+    justify-content: center;
+  }
+  .card-image-container {
+    height: 250px;
+  }
+  .card-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .card-content-metadata .date,
+  .card-content-metadata .author {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .read-btn, .see-all-btn-mobile ,
+  .card-content .card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 /* TR-21 - Blogs Section End */
