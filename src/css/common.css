@@ -195,7 +195,7 @@ header {
 }
 /* TR-07 - HEADER SECTİON END */
 
-/* TR-03 - Hero Section Start */ 
+/* TR-03 - Hero Section Start */
 .hero-section{
     display: flex;
     align-items: center;
@@ -290,44 +290,44 @@ header {
 @media screen and (max-width: 780px) {
     .hero-section {
         display: flex;
-        flex-wrap: wrap; 
-        flex-direction: row; 
-        justify-content: center; 
-        align-items: center; 
-        gap: 20px; 
-        height: auto; 
-        padding: 20px; 
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px;
     }
     .hero-description{
         max-width: 90%;
     }
     .hero-section-content {
-        order: 1; 
+        order: 1;
         max-width: none;
         width: 100%;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 20px
     }
-    .hero-section-cta-container { 
+    .hero-section-cta-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        gap: 15px; 
-        margin-top: 20px; 
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
     }
 
     .hero-image-container {
         order: 2;
-        flex: 0 0 45%; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
+        flex: 0 0 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-/* TR-03 - Hero Section End */ 
+/* TR-03 - Hero Section End */
 
 /* TR-05 - Trusted Brands Section Start */
 .trusted-brands-section{
@@ -539,7 +539,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 95%; 
+        width: 95%;
     }
     .video-description{
         max-width: 95%;
@@ -725,7 +725,7 @@ header {
   gap: 32px;
   align-items: center;
 }
-.building-bridges-container .image-container, 
+.building-bridges-container .image-container,
 .building-bridges-container .information-container{
   width: 50%;
 }
@@ -829,7 +829,7 @@ header {
         gap: 28px;
         padding: 0 10px;
     }
-    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title,
     .building-bridges-section .information-container .title .accented{
         font-size: 40px;
         line-height: 48px;
@@ -858,12 +858,12 @@ header {
     .building-bridges-container .sticker-container{
         transform: scale(0.8);
     }
-    .building-bridges-section .information-container { 
+    .building-bridges-section .information-container {
         max-width: 100%;
         padding: 0 20px;
         width: 100%;
     }
-    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title,
     .building-bridges-section .information-container .title .accented{
         font-size: 36px;
         line-height: 42px;
@@ -871,7 +871,7 @@ header {
     .building-bridges-section .information-container .description{
         font-size: var(--font-sm);
         line-height: 24px;
-    } 
+    }
 }
 @media (max-width: 576px){
     .building-bridges-section .information-container .button {
@@ -893,7 +893,7 @@ header {
         bottom: 45px;
         left: 65%;
     }
-    .building-bridges-section .information-container .title, 
+    .building-bridges-section .information-container .title,
     .building-bridges-section .information-container .title .accented{
         font-size: 30px;
         line-height: 38px;
@@ -901,7 +901,7 @@ header {
     .building-bridges-section .information-container .description{
         font-size: var(--font-xs);
         line-height: 20px;
-    } 
+    }
 }
 @media (max-width:525px ){
     .building-bridges-container .sticker-container{
@@ -954,7 +954,7 @@ header {
     gap: 16px;
 }
 .counter {
-   font-family: var(--font-family-base); 
+   font-family: var(--font-family-base);
    font-size: var(--font-3xl);
    font-weight: 700;
    line-height: 72px;
@@ -1497,11 +1497,16 @@ header {
   gap: 50px;
 }
 .blog-card{
+  background-color: var(--light-grey);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   border: 1px solid var(--light-grey);
   overflow: hidden;
+  box-shadow: 0px 1px 2px 0px #00000014;
+}
+.blog-card:hover{
+  background-color: white;
 }
 .card-image-container{
   display: grid;
@@ -1649,3 +1654,97 @@ header {
   }
 }
 /* TR-21 - Blogs Section End */
+/* TR-23 - CTA Banner Section Start */
+.cta-banner-section {
+  max-height: 520px;
+  overflow: hidden;
+  font-family: var(--font-family-base);
+  min-height: 60dvh;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  background-color: var(--text-color);
+}
+.cta-content-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 30px;
+}
+.cta-content {
+  max-width: 60%;
+  margin-inline-end: auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  gap: 50px;
+  padding: 100px;
+}
+.cta-title{
+  font-size: var(--font-3xl);
+  font-weight: var(--bold);
+  line-height: 72px;
+}
+.cta-description-container{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.cta-description{
+  font-size: var(--font-md);
+  font-weight: var(--regular);
+  line-height: 30px;
+  color: white;
+  opacity: 0.8;
+}
+.cta-btn{
+  font-size: var(--font-base);
+  font-weight: var(--medium);
+  line-height: 28px;
+  background-color:#F0B73F ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55px;
+  padding: 16px 24px;
+  gap: 20px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.cta-btn:hover{
+  scale: 1.05;
+}
+.cta-btn img{
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  gap: 10px;
+  border-radius: 50%;
+  background-color: #00000029;
+}
+.cta-img-container{
+  place-items: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  bottom: 0;
+}
+.cta-img-container img{
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+  bottom: 0;
+  right: 50px;
+}
+/* TR-23 - CTA Banner Section End */
