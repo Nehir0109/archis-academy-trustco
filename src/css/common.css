@@ -1656,7 +1656,8 @@ header {
 /* TR-21 - Blogs Section End */
 /* TR-23 - CTA Banner Section Start */
 .cta-banner-section {
-  max-height: 520px;
+  min-height: 520px;
+  height: auto;
   overflow: hidden;
   font-family: var(--font-family-base);
   min-height: 60dvh;
@@ -1669,10 +1670,9 @@ header {
 .cta-content-wrapper {
   width: 100%;
   max-width: 1440px;
-  margin-inline: auto;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
   gap: 30px;
 }
 .cta-content {
@@ -1688,6 +1688,7 @@ header {
   padding: 100px;
 }
 .cta-title{
+  width: 700px;
   font-size: var(--font-3xl);
   font-weight: var(--bold);
   line-height: 72px;
@@ -1736,7 +1737,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 800px;
   bottom: 0;
 }
 .cta-img-container img{
@@ -1745,6 +1745,81 @@ header {
   max-width: 800px;
   object-fit: cover;
   bottom: 0;
-  right: 50px;
+  right: 20px;
+}
+@media (max-width: 1200px){
+  .cta-title {
+    width: 673px;
+  }
+  .cta-banner-section{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .cta-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 84%;
+    margin-inline: auto;
+    justify-content: center;
+  }
+  .cta-img-container img{
+    position: unset;
+  }
+  .cta-content { 
+    height: fit-content;
+    padding-block: 50px;
+    max-width: unset;
+    margin-inline-end: unset;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px){
+  .cta-content-wrapper{ 
+    width: 100%;
+    max-width: unset;
+    padding-block: 0px;
+  }
+  .cta-title {
+    width: 555px;
+    font-size: 55px;
+    line-height: 48px;
+  }
+  .cta-description, 
+  .cta-btn{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .cta-btn{
+    width: 254px;
+  }
+  .cta-img-container {
+    width: 100%;
+  }
+  .cta-img-container img {
+    right: 0px;
+  }
+}
+@media (max-width: 520px){
+  .cta-title {
+    font-size: 35px;
+    line-height: 36px;
+    width: 397px;
+  }
+  .cta-description,
+  .cta-btn {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 430px) {
+  .cta-title {
+    width: 350px;
+  }
 }
 /* TR-23 - CTA Banner Section End */
