@@ -1761,10 +1761,13 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: unset;
     max-width: 84%;
     margin-inline: auto;
     justify-content: center;
+  }
+  .cta-description-container{
+    align-items: center;
   }
   .cta-img-container img{
     position: unset;
