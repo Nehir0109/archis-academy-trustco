@@ -1881,6 +1881,14 @@ footer{
   color: #404040;
 }
 .sections-part {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 90px;
+}
+.sections-left,
+.sections-right {
   max-width: 114px;
   height: auto;
   display: flex;
@@ -1904,5 +1912,81 @@ footer{
 }
 .sections:hover{
   scale: 1.1;
+}
+@media (max-width:1440px ){
+  .sections{
+    gap: 28px;
+  }
+}
+@media (max-width: 1115px) {
+  .footer-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+  }
+  .footer-logo-container {
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer-logos {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-text-container{
+    max-width: unset;
+    text-align: center;
+  }
+  .footer-text{
+    font-size: 17px;
+  }
+  .sections-left,
+  .sections-right {
+    text-align: center;
+  }
+}
+@media (max-width: 1040px){
+  .footer-section{
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 768px){
+  .footer-section{
+    padding: 50px 70px;
+    gap: 55px;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-title{
+    font-size: var(--font-md);
+    line-height: 28px;
+  }
+  .sections-left,
+  .sections-right {
+    gap: 14px;
+  }
+  .sections {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px){
+  .footer-section{
+    padding: 50px 20px;
+    gap: 30px;
+  }
+  .footer-logo-container {
+    gap: 30px;
+  }
+  .sections-part{
+    gap: 65px;
+  }
+}
+@media (max-width: 390px){
+  .footer-section{
+    padding: 50px 15px;
+  }
 }
 /* TR-25 - Footer Section End */
