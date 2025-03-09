@@ -1913,6 +1913,10 @@ footer{
 .sections:hover{
   scale: 1.1;
 }
+.contact{
+  color: var(--primary-color);
+  font-weight: var(--bolder);
+}
 @media (max-width:1440px ){
   .sections{
     gap: 28px;
