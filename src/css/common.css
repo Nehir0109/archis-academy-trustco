@@ -1826,3 +1826,83 @@ header {
   }
 }
 /* TR-23 - CTA Banner Section End */
+/* TR-25 - Footer Section Start */
+footer{
+  font-family: var(--font-family-base);
+  overflow: hidden;
+  height: auto;
+}
+.footer-section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 150px;
+  gap: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 50px;
+  max-width: 247px;
+}
+.footer-trustco-logo {
+  width: 211px;
+  height: 32px;
+}
+.footer-logos {
+  max-width: 247px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 16px;
+}
+.mini-logo{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.mini-logo:hover{
+  scale: 1.2;
+}
+.footer-text-container {
+  max-width: 395px;
+}
+.footer-text {
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #404040;
+}
+.sections-part {
+  max-width: 114px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 32px;
+}
+.footer-title{
+  font-size: var(--font-lg);
+  font-weight: var(--bold);
+  line-height: 32px;
+  color: var(--text-color);
+}
+.sections{
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: 28px;
+  color: #404040;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.sections:hover{
+  scale: 1.1;
+}
+/* TR-25 - Footer Section End */
