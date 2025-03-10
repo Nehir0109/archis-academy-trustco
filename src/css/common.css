@@ -1831,6 +1831,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 32px;
   align-items: center;
   margin: 0 auto;
   padding: 24px 150px;
@@ -1891,5 +1892,23 @@ header {
   font-size: var(--font-sm);
   font-weight: 600;
   line-height:24px;
+}
+@media (max-width:845px ){
+  .site-credits-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .links-container {
+    max-width: unset;
+    width: 295px;
+  }
+}
+@media(max-width: 532px){
+  .trustco-text{
+    width: 153px;
+  }
+  .links-container{
+   gap: 25px;
+  }
 }
 /* TR-27 - Site Credits Section  End */
